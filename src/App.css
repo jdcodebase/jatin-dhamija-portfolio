@@ -1,0 +1,33 @@
+.desktop-navbar-list {
+  @apply cursor-pointer relative text-gray-300 transition duration-300;
+}
+
+.desktop-navbar-list::after {
+  content: "";
+  @apply absolute left-0 bottom-[-6px] w-0 h-[2px] bg-cyan-500 transition-all duration-300;
+}
+
+.desktop-navbar-list:hover {
+  @apply text-white;
+}
+
+.desktop-navbar-list:hover::after {
+  @apply w-full;
+}
+
+.mobile-navbar-list {
+  @apply cursor-pointer text-gray-300 relative transition duration-300 border-b rounded-bl-lg border-cyan-500 px-2;
+}
+
+/* .mobile-navbar-list::after {
+  content: "";
+  @apply absolute left-0 bottom-[-6px] w-0 h-[2px] bg-white transition-all duration-300;
+} */
+
+.mobile-navbar-list:hover {
+  @apply text-white;
+}
+
+.mobile-navbar-list:hover::after {
+  @apply w-full;
+}

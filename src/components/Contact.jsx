@@ -23,23 +23,18 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (!form.name || !form.email || !form.message) {
-      alert("Fill all fields");
-      return;
-    }
-
     setLoading(true);
 
     try {
       await emailjs.send(
-        "service_9g0z4lb",
-        "template_nizujiq",
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
         {
           name: form.name,
           email: form.email,
           message: form.message,
         },
-        "Ia27jkNeMwoVav5uU",
+        import.meta.env.VITE_PUBLIC_KEY,
       );
 
       alert("Message sent & email delivered");

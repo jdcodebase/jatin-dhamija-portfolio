@@ -1,31 +1,13 @@
 const Projects = () => {
   const projects = [
     {
-      title: "MERN E-Commerce",
+      title: "ZenGrocery (Smart Kirana Management System)",
       description:
-        "Full-stack e-commerce application with authentication, product management and shopping cart system.",
-      tech: ["React", "Node", "Express", "MongoDB"],
-      github: "#",
-      live: "#",
-      image: "/projects/ecommerce.png",
-    },
-    {
-      title: "Realtime Chat App",
-      description:
-        "Real-time chat application using WebSockets for instant messaging between users.",
-      tech: ["React", "Node", "Socket.io", "MongoDB"],
-      github: "#",
-      live: "#",
-      image: "/projects/chat.png",
-    },
-    {
-      title: "Task Manager",
-      description:
-        "Productivity app for managing daily tasks with authentication and CRUD operations.",
-      tech: ["React", "Express", "MongoDB", "JWT"],
-      github: "#",
-      live: "#",
-      image: "/projects/task.png",
+        "A real-world full-stack application built for kirana stores. Supports weight-based and unit-based billing, real-time price calculation, profit tracking, and bill storage with MongoDB. Designed to digitize local shop operations.",
+      tech: ["React", "Node.js", "Express", "MongoDB"],
+      github: "https://github.com/jdcodebase/ZenGrocery",
+      live: "https://zen-grocery.vercel.app/",
+      image: "/projects/kirana.png",
     },
   ];
 
@@ -33,16 +15,15 @@ const Projects = () => {
     <section id="projects" className="bg-black text-white py-24 px-6">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl font-bold text-center mb-16">
-          My <span className="text-gray-300">Projects</span>
+          My <span className="text-gray-300">Project</span>
         </h2>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="flex justify-center">
           {projects.map((project) => (
             <div
               key={project.title}
-              className="group bg-white/5 backdrop-blur-md border border-gray-800 rounded-xl overflow-hidden hover:-translate-y-2 transition transform hover:shadow-[0_10px_40px_rgba(0,0,0,0.7)]"
+              className="group w-full max-w-md bg-white/5 backdrop-blur-md border border-gray-800 rounded-xl overflow-hidden hover:-translate-y-2 transition transform hover:shadow-[0_10px_40px_rgba(0,0,0,0.7)]"
             >
-              {/* Image */}
               <img
                 src={project.image}
                 alt={project.title}
@@ -56,7 +37,6 @@ const Projects = () => {
                   {project.description}
                 </p>
 
-                {/* Tech stack */}
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tech.map((tech) => (
                     <span
@@ -68,10 +48,11 @@ const Projects = () => {
                   ))}
                 </div>
 
-                {/* Buttons */}
                 <div className="flex gap-4">
                   <a
                     href={project.github}
+                    target="_blank"
+                    rel="noreferrer"
                     className="text-sm border border-gray-700 px-4 py-2 rounded hover:border-white transition"
                   >
                     GitHub
@@ -79,6 +60,8 @@ const Projects = () => {
 
                   <a
                     href={project.live}
+                    target="_blank"
+                    rel="noreferrer"
                     className="text-sm bg-white text-black px-4 py-2 rounded hover:opacity-90 transition"
                   >
                     Live Demo

@@ -9,7 +9,7 @@ const Navbar = () => {
     "Home",
     "About",
     "Skills",
-    // "Projects",
+    "Projects",
     "Experience",
     "Contact",
   ];

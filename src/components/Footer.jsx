@@ -40,7 +40,7 @@ const Footer = () => {
           <a href="https://github.com/jdcodebase" target="_blank">
             GitHub
           </a>
-          <a href="https://www.youtube.com/@JD-Codebase" target="_blank">
+          <a href="https://www.youtube.com/@JDCodebase" target="_blank">
             YouTube
           </a>
           <a href="mailto:jatindhamija025@gmail.com">Email</a>

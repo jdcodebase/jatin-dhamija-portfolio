@@ -11,7 +11,7 @@ const Footer = () => {
         </div>
 
         {/* Links */}
-        <div className="flex justify-center gap-6 text-sm">
+        <div className="flex justify-center gap-6 text-sm flex-wrap">
           <a href="#home" className="hover:text-gray-300">
             Home
           </a>
@@ -20,6 +20,9 @@ const Footer = () => {
           </a>
           <a href="#skills" className="hover:text-gray-300">
             Skills
+          </a>
+          <a href="#projects" className="hover:text-gray-300">
+            Projects
           </a>
           <a href="#experience" className="hover:text-gray-300">
             Experience
@@ -30,17 +33,33 @@ const Footer = () => {
         </div>
 
         {/* Socials */}
-        <div className="flex justify-center gap-6 text-sm">
+        <div className="flex justify-center gap-6 text-sm flex-wrap">
           <a
-            href="https://www.linkedin.com/in/jatin-dhamija-jd/"
+            href="https://www.linkedin.com/in/jatindhamija/"
             target="_blank"
+            rel="noreferrer"
           >
             LinkedIn
           </a>
-          <a href="https://github.com/jdcodebase" target="_blank">
+          <a
+            href="https://github.com/jdcodebase"
+            target="_blank"
+            rel="noreferrer"
+          >
             GitHub
           </a>
-          <a href="https://www.youtube.com/@JDCodebase" target="_blank">
+          <a
+            href="https://leetcode.com/u/jdcodebase/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            LeetCode
+          </a>
+          <a
+            href="https://www.youtube.com/@jdcodebase"
+            target="_blank"
+            rel="noreferrer"
+          >
             YouTube
           </a>
           <a href="mailto:jatindhamija025@gmail.com">Email</a>

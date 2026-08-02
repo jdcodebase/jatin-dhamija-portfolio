@@ -27,16 +27,24 @@ const About = () => {
           </p>
 
           <p className="text-gray-400 leading-relaxed mb-4">
-            During my React Native internship at Comcare Enterprises, I
-            developed a smartwatch-integrated mobile application where I handled
-            the frontend UI, backend APIs, and real-time data synchronization
-            end-to-end.
+            As the sole developer during my React Native internship at Comcare
+            Enterprises, I built a production mobile app used by real customers
+            — handling everything from the Node.js/Express backend to
+            Bluetooth-based smartwatch pairing and device connection flows.
           </p>
 
-          <p className="text-gray-400 leading-relaxed">
+          <p className="text-gray-400 leading-relaxed mb-4">
             I also run a technical YouTube channel where I share tutorials on
             Web Development and Data Structures & Algorithms to help beginners
             learn modern full-stack development.
+          </p>
+
+          <p className="text-gray-400 leading-relaxed">
+            I hold a{" "}
+            <span className="text-white font-medium">
+              B.Tech in Computer Science Engineering
+            </span>{" "}
+            from PIET, Panipat (2019 – 2023).
           </p>
         </div>
       </div>

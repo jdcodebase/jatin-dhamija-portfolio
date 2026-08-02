@@ -2,10 +2,12 @@ import {
   FaReact,
   FaNodeJs,
   FaGitAlt,
+  FaGithub,
   FaDatabase,
   FaHtml5,
   FaCss3Alt,
   FaServer,
+  FaLinux,
 } from "react-icons/fa";
 
 import {
@@ -16,6 +18,7 @@ import {
   SiRedux,
   SiJsonwebtokens,
   SiPostman,
+  SiFirebase,
 } from "react-icons/si";
 
 const Skills = () => {
@@ -24,6 +27,7 @@ const Skills = () => {
       title: "Frontend",
       skills: [
         { name: "React", icon: <FaReact />, color: "text-cyan-400" },
+        { name: "React Native", icon: <FaReact />, color: "text-cyan-300" },
         { name: "Redux", icon: <SiRedux />, color: "text-purple-500" },
         { name: "Tailwind", icon: <SiTailwindcss />, color: "text-sky-400" },
         {
@@ -48,6 +52,11 @@ const Skills = () => {
       title: "Database",
       skills: [
         { name: "MongoDB", icon: <SiMongodb />, color: "text-green-400" },
+        {
+          name: "Cloud Firestore",
+          icon: <SiFirebase />,
+          color: "text-amber-400",
+        },
         { name: "SQL", icon: <FaDatabase />, color: "text-blue-400" },
       ],
     },
@@ -55,7 +64,9 @@ const Skills = () => {
       title: "Tools",
       skills: [
         { name: "Git", icon: <FaGitAlt />, color: "text-orange-500" },
+        { name: "GitHub", icon: <FaGithub />, color: "text-gray-300" },
         { name: "Postman", icon: <SiPostman />, color: "text-orange-500" },
+        { name: "Linux", icon: <FaLinux />, color: "text-yellow-300" },
       ],
     },
   ];

@@ -70,7 +70,7 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className="flex gap-4 mt-6">
+          <div className="flex gap-4 mt-6 flex-wrap">
             <a
               href="https://github.com/jdcodebase"
               target="_blank"
@@ -81,12 +81,30 @@ const Contact = () => {
             </a>
 
             <a
-              href="https://www.linkedin.com/in/jatin-dhamija-jd/"
+              href="https://www.linkedin.com/in/jatindhamija/"
               target="_blank"
               rel="noreferrer"
               className="bg-white/10 px-4 py-2 rounded-lg hover:bg-white/20 transition"
             >
               LinkedIn
+            </a>
+
+            <a
+              href="https://leetcode.com/u/jdcodebase/"
+              target="_blank"
+              rel="noreferrer"
+              className="bg-white/10 px-4 py-2 rounded-lg hover:bg-white/20 transition"
+            >
+              LeetCode
+            </a>
+
+            <a
+              href="https://www.youtube.com/@jdcodebase"
+              target="_blank"
+              rel="noreferrer"
+              className="bg-white/10 px-4 py-2 rounded-lg hover:bg-white/20 transition"
+            >
+              YouTube
             </a>
           </div>
         </div>

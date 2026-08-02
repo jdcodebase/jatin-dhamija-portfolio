@@ -22,6 +22,8 @@ const Hero = () => {
               sequence={[
                 "MERN Stack Developer",
                 2000,
+                "React Native Developer",
+                2000,
                 "Full Stack Web Developer",
                 2000,
                 "DSA Problem Solver",
@@ -42,17 +44,21 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-5 pt-6 justify-center md:justify-start">
-            <button className="px-8 py-3 rounded-md bg-white text-black font-semibold hover:opacity-90 transition shadow-md hover:shadow-lg hover:shadow-cyan-500 shadow-cyan-500">
+            <a
+              className="px-8 py-3 rounded-md bg-white text-black font-semibold hover:opacity-90 transition shadow-md hover:shadow-lg hover:shadow-cyan-500 shadow-cyan-500"
+              href="#projects"
+            >
               View Projects
-            </button>
+            </a>
 
-            <button className="px-8 py-3 rounded-md border border-gray-600 hover:border-white hover:text-white text-gray-300 transition font-semibold shadow-md hover:shadow-lg hover:shadow-white shadow-white">
+            <a
+              className="px-8 py-3 rounded-md border border-gray-600 hover:border-white hover:text-white text-gray-300 transition font-semibold shadow-md hover:shadow-lg hover:shadow-white shadow-white"
+              href="#contact"
+            >
               Contact Me
-            </button>
+            </a>
           </div>
         </div>
-
-        {/* RIGHT SIDE TECHNOLOGY CLOUD */}
 
         <div className="hidden md:flex justify-center">
           <SkillOrbit />

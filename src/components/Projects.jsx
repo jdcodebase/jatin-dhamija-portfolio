@@ -1,25 +1,22 @@
 const Projects = () => {
   const projects = [
     {
-      title: "ZenGrocery (Smart Kirana Management System)",
+      title: "Task Manager Web App",
       description:
-        "A real-world full-stack application built for kirana stores. Supports weight-based and unit-based billing, real-time price calculation, profit tracking, and bill storage with MongoDB. Designed to digitize local shop operations.",
-      tech: ["React", "Node.js", "Express", "MongoDB"],
-      github: "https://github.com/jdcodebase/ZenGrocery",
-      live: "https://zen-grocery.vercel.app/",
-      youtube: null,
-      image: "/projects/kirana.png",
+        "A full-stack MERN task management app with separately deployed frontend and backend connected to MongoDB Atlas. Features task creation, editing, deletion, completion toggling, search by title, filtering by status/priority/due date, a real-time progress bar, and priority levels with due dates.",
+      tech: ["React", "Tailwind CSS", "Node.js", "Express", "MongoDB"],
+      github: "https://github.com/jdcodebase/task-manager-web-app",
+      live: "https://task-manager-web-app-roan.vercel.app/",
+      image: "/projects/task-manager-web-app.png",
     },
     {
-      title: "MERN Task Manager",
+      title: "Notes Web App",
       description:
-        "A full stack task manager built from scratch using the MERN stack. Taught as a 9-video YouTube series on jdcodebase covering Express server setup, MongoDB with Mongoose, REST API design, and React frontend with Tailwind CSS.",
-      tech: ["React", "Node.js", "Express", "MongoDB"],
-      github: "https://github.com/jdcodebase/task-manager",
-      live: null,
-      youtube:
-        "https://www.youtube.com/playlist?list=PLKIziyQytJbv0yXO5jVj58HAvquZdGjFz",
-      image: "/projects/task-manager.png",
+        "A full-stack notes application with complete CRUD functionality — create notes via modal, read, edit, delete, and search. Built with a fully responsive, mobile-friendly UI and deployed live on Vercel.",
+      tech: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
+      github: "https://github.com/jdcodebase/notes-web-app",
+      live: "https://notes-web-app-nine.vercel.app/",
+      image: "/projects/notes-web-app.png",
     },
   ];
 
@@ -39,7 +36,7 @@ const Projects = () => {
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-48 object-cover"
+                className="w-full aspect-video object-cover object-top"
               />
 
               <div className="p-6">
@@ -78,17 +75,6 @@ const Projects = () => {
                       className="text-sm bg-white text-black px-4 py-2 rounded hover:opacity-90 transition"
                     >
                       Live Demo
-                    </a>
-                  )}
-
-                  {project.youtube && (
-                    <a
-                      href={project.youtube}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="text-sm border border-red-700 text-red-400 px-4 py-2 rounded hover:bg-red-700 hover:text-white transition"
-                    >
-                      ▶ Watch Series
                     </a>
                   )}
                 </div>

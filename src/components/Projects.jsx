@@ -1,6 +1,15 @@
 const Projects = () => {
   const projects = [
     {
+      title: "Authentication System",
+      description:
+        "A full-stack MERN authentication system with secure JWT-based authentication, HttpOnly cookies, access & refresh tokens, protected routes, automatic session restoration, and a responsive React frontend. Deployed with Vercel, Render, and MongoDB Atlas.",
+      tech: ["React", "Tailwind CSS", "Node.js", "Express", "MongoDB", "JWT"],
+      github: "https://github.com/jdcodebase/authentication-system",
+      live: "https://authentication-system-eta-five.vercel.app/",
+      image: "/projects/authentication-system.png",
+    },
+    {
       title: "Task Manager Web App",
       description:
         "A full-stack MERN task management app with separately deployed frontend and backend connected to MongoDB Atlas. Features task creation, editing, deletion, completion toggling, search by title, filtering by status/priority/due date, a real-time progress bar, and priority levels with due dates.",
@@ -27,7 +36,7 @@ const Projects = () => {
           My <span className="text-gray-300">Projects</span>
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 justify-items-center">
           {projects.map((project) => (
             <div
               key={project.title}

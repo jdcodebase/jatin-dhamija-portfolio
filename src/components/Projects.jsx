@@ -1,6 +1,23 @@
 const Projects = () => {
   const projects = [
     {
+      title: "Expense Tracker",
+      description:
+        "A full-stack MERN expense management app with JWT authentication, complete income and expense CRUD, a dynamic financial dashboard, MongoDB aggregation, Chart.js analytics, transaction history, search and filters, and a responsive Tailwind CSS UI. Deployed with Vercel, Render, and MongoDB.",
+      tech: [
+        "React",
+        "Tailwind CSS",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "JWT",
+        "Chart.js",
+      ],
+      github: "https://github.com/jdcodebase/expense-tracker",
+      live: "https://expense-tracker-beige-rho-49.vercel.app/",
+      image: "/projects/expense-tracker.png",
+    },
+    {
       title: "Authentication System",
       description:
         "A full-stack MERN authentication system with secure JWT-based authentication, HttpOnly cookies, access & refresh tokens, protected routes, automatic session restoration, and a responsive React frontend. Deployed with Vercel, Render, and MongoDB Atlas.",

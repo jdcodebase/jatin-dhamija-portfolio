@@ -36,12 +36,22 @@ const Projects = () => {
       image: "/projects/task-manager-web-app.png",
     },
     {
-      title: "Notes Web App",
+      title: "Notes App",
       description:
-        "A full-stack notes application with complete CRUD functionality — create notes via modal, read, edit, delete, and search. Built with a fully responsive, mobile-friendly UI and deployed live on Vercel.",
-      tech: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
+        "A full-stack notes application with a React web client and React Native Android app, powered by a Node.js and Express REST API with MongoDB. Features complete CRUD operations, instant search, sorting, responsive web UI, and an Android APK for mobile use.",
+      tech: [
+        "React",
+        "React Native",
+        "TypeScript",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Tailwind CSS",
+        "Axios",
+      ],
       github: "https://github.com/jdcodebase/notes-web-app",
       live: "https://notes-web-app-nine.vercel.app/",
+      apk: "https://github.com/jdcodebase/notes-web-app/releases/latest",
       image: "/projects/notes-web-app.png",
     },
   ];
@@ -101,6 +111,17 @@ const Projects = () => {
                       className="text-sm bg-white text-black px-4 py-2 rounded hover:opacity-90 transition"
                     >
                       Live Demo
+                    </a>
+                  )}
+
+                  {project.apk && (
+                    <a
+                      href={project.apk}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-sm border border-gray-700 px-4 py-2 rounded hover:border-white transition"
+                    >
+                      Android APK
                     </a>
                   )}
                 </div>

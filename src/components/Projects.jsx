@@ -27,12 +27,22 @@ const Projects = () => {
       image: "/projects/authentication-system.png",
     },
     {
-      title: "Task Manager Web App",
+      title: "Task Manager",
       description:
-        "A full-stack MERN task management app with separately deployed frontend and backend connected to MongoDB Atlas. Features task creation, editing, deletion, completion toggling, search by title, filtering by status/priority/due date, a real-time progress bar, and priority levels with due dates.",
-      tech: ["React", "Tailwind CSS", "Node.js", "Express", "MongoDB"],
+        "A full-stack MERN task management app with a React web client, Node.js and Express REST API, MongoDB database, and a React Native Android app. Features task CRUD, completion toggling, search, status/priority/due-date filtering, sorting, progress tracking, responsive web UI, and an Android APK release.",
+      tech: [
+        "React",
+        "React Native",
+        "TypeScript",
+        "Tailwind CSS",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Axios",
+      ],
       github: "https://github.com/jdcodebase/task-manager-web-app",
       live: "https://task-manager-web-app-roan.vercel.app/",
+      apk: "https://github.com/jdcodebase/task-manager-web-app/releases/latest",
       image: "/projects/task-manager-web-app.png",
     },
     {
